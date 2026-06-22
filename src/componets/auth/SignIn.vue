@@ -61,7 +61,7 @@
       <p class="mb-0">
         <a href="register.html" class="text-center">Register a new membership</a>
       </p>
-    </div>
+    </div> 
     <!-- /.login-card-body -->
   </div>
 </div>
