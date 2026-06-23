@@ -1,6 +1,11 @@
 import SignIn from "@/componets/auth/SignIn.vue";
 import SignUp from "@/componets/auth/SignUp.vue";
-import Dashboard from "@/componets/pages/dashboard.vue";
+import Dashboard from "@/componets/pages/Dashboard.vue";
+import Profile from "@/componets/auth/Profile.vue";
+import Navbar from '@/componets/includes/Navbar.vue';
+import Sidebar from '@/componets/includes/Sidebar.vue';
+import Footer from '@/componets/includes/Footer.vue';       
+
 import { createRouter, createWebHistory } from "vue-router";
 const routes = [
     {
@@ -14,13 +19,29 @@ const routes = [
         component: SignUp
     },
     {
-        path: "/dashboard",
-        name: "Dashboard",
-        component: Dashboard
+        path: '/profile',
+        name: 'Profile',
+        components: {
+            navbar: Navbar,
+            sidebar:Sidebar,
+            footer: Footer,
+            default: Profile,
+        },
+        meta: { guarded: true },
     },
     {
-        path: "/:path(.*)*",
-        redirect: { name: 'SignIn' }
+        path: "/dashboard",
+        name: "Dashboard",
+        components: {
+            navbar: Navbar,
+            sidebar:Sidebar,
+            footer: Footer,
+            default: Dashboard,
+        },
+        meta: { guarded: true },
+    },
+    {
+        path: "/:path(.*)*", redirect: { name: 'SignIn' }
     }
 ];
 const router = createRouter({
