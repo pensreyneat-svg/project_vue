@@ -49,11 +49,13 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
+              <router-link :to="{ name: 'Widget' }">  
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Simple Link
-                <span class="right badge badge-danger">New</span>
+                Widgets
+            
               </p>
+              </router-link>
             </a>
           </li>
         </ul>

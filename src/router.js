@@ -4,7 +4,8 @@ import Dashboard from "@/componets/pages/Dashboard.vue";
 import Profile from "@/componets/auth/Profile.vue";
 import Navbar from '@/componets/includes/Navbar.vue';
 import Sidebar from '@/componets/includes/Sidebar.vue';
-import Footer from '@/componets/includes/Footer.vue';       
+import Footer from '@/componets/includes/Footer.vue';      
+import widget from '@/componets/pages/Widget.vue'; 
 
 import { createRouter, createWebHistory } from "vue-router";
 const routes = [
@@ -26,6 +27,17 @@ const routes = [
             sidebar:Sidebar,
             footer: Footer,
             default: Profile,
+        },
+        meta: { guarded: true },
+    },
+     {
+        path: '/widget',
+        name: 'Widget',
+        components: {
+            navbar: Navbar,
+            sidebar:Sidebar,
+            footer: Footer,
+            default: widget,
         },
         meta: { guarded: true },
     },
