@@ -1,16 +1,21 @@
+<script setup lang="ts">
+import Dashboard from '../pages/Dashboard.vue';
+
+</script>
+
 <template>
     
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="#"><b>Admin</b>LTE</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="../../index3.html" method="post">
+      <form action="#" method="post">
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email">
           <div class="input-group-append">
@@ -38,7 +43,9 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+             <router-link :to="{ name: 'Dashboard' }"> 
+            <button type="submit" class="btn btn-primary btn-block" >Sign In</button>
+           </router-link>
           </div>
           <!-- /.col -->
         </div>
@@ -56,10 +63,11 @@
       <!-- /.social-auth-links -->
 
       <p class="mb-1">
-        <a href="forgot-password.html">I forgot my password</a>
+        <a href="#">I forgot my password</a>
       </p>
       <p class="mb-0">
-        <a href="register.html" class="text-center">Register a new membership</a>
+         <router-link class="nav-link" :to="{ name: 'SignUp' }">
+        <a href="#" class="text-center">Register a new membership</a></router-link>
       </p>
     </div> 
     <!-- /.login-card-body -->

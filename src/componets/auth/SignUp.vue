@@ -2,13 +2,13 @@
     <body class="hold-transition register-page">
 <div class="register-box">
   <div class="register-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href=""><b>Admin</b>LTE</a>
   </div>
 
   <div class="card">
     <div class="card-body register-card-body">
       <p class="login-box-msg">Register a new membership</p>
-      <form action="../../index.html" method="post">
+      <form action="#" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Full name">
           <div class="input-group-append">
@@ -69,8 +69,8 @@
           Sign up using Google+
         </a>
       </div>
-
-      <a href="" class="text-center">I already have a membership</a>
+         <router-link class="nav-link" :to="{ name: 'SignIn' }">
+      <a href="" class="text-center">I already have a membership</a></router-link>
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

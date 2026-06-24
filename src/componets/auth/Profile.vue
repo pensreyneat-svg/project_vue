@@ -11,29 +11,27 @@
                 <div class="text-center">
                   
                   <img
-                    class="brand-image img-circle elevation-3"
+                    class="profile-user-img img-fluid img-circle"
                     :src="user"
                     alt="User profile picture"
                   >
                  
                 </div>
 
-                <h3 class="profile-username text-center">Nina Mcintire</h3>
-
+                <h3 class="profile-username text-center">Pen Sreyneat</h3>
                 <p class="text-muted text-center">Software Engineer</p>
-
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
                     <b>Followers</b>
-                    <a class="float-right">1,322</a>
+                    <a class="float-right">2K</a>
                   </li>
                   <li class="list-group-item">
                     <b>Following</b>
-                    <a class="float-right">543</a>
+                    <a class="float-right">1K</a>
                   </li>
                   <li class="list-group-item">
                     <b>Friends</b>
-                    <a class="float-right">13,287</a>
+                    <a class="float-right">10K</a>
                   </li>
                 </ul>
 
